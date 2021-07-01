@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <section class="row">
+            <div class="col-mt-4">
+                <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-link active" id="videoEditing-tab" data-toggle="tab" href="#videoEditing" role="tab"
+                        aria-controls="videoEditing" aria-selected="true">Video Editing</li>
+                    <li class="nav-link" id="videoList-tab" data-toggle="tab" href="#videoList" role="tab"
+                        aria-controls="videoList" aria-selected="false">Video List</li>
+
+                </ul>
+
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="videoEditing" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
+                        <form action="" method="POST">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="boder p-3">
+                                                <img src="" alt="#" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="form-group">
+                                                <label for="videoId">Video ID</label>
+                                                <input type="text" class="form-control" id="videoId"
+                                                    aria-describedby="videoId">
+                                                <small id="videoId" class="form-text text-muted"></small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="videoTitle">Video title</label>
+                                                <input type="text" class="form-control" id="videoTitle"
+                                                    aria-describedby="videoTitle">
+                                                <small id="videoTitle" class="form-text text-muted"></small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="viewCount">View Count</label>
+                                                <input type="text" class="form-control" id="viewCount"
+                                                    aria-describedby="viewCount">
+                                                <small id="viewCount" class="form-text text-muted"></small>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <label><input class="form-check-input" type="radio" name="status"
+                                                        id="status" value="0" checked>
+
+                                                    Active
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label><input class="form-check-input" type="radio" name="status"
+                                                        id="status" value="1" checked>
+
+                                                    In-Active
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label class="description">Description</label>
+                                            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="videoList" role="tabpanel" aria-labelledby="videoList-tab">
+
+
+            </div>
+
+            </div>
+
+        </section>
+        <footer class="row"></footer>
+
+    </main>
+
+    <script>
+        $('#myTab a').on('click', function (event) {
+            event.preventDefault()
+            $(this).tab('show')
+        })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
